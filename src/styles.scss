@@ -1,0 +1,1016 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+/* adjust body when menu is open */
+body.slide-active {
+  overflow-x: hidden
+}
+.navbar-header {
+  height: 70px !important;
+}
+.navbar-inverse {
+  background-color: white;
+  color: orange;
+  border-color: orange;
+  height: 51px;
+
+}
+
+.navbar-inverse .navbar-nav a {
+  background-color: white;
+  color: orange;
+
+}
+.navbar-light .navbar-nav .nav-link {
+  color: orange;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  color: orange;
+  background-color: white;
+  border-color: orange;
+}
+.navbar-inverse .navbar-nav li a:hover{
+
+  color: green;
+}
+
+/*first child of #page-content so it doesn't shift around*/
+.no-margin-top {
+  margin-top: 0px!important
+}
+/*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+#page-content {
+  position: relative;
+  padding-top: 0px;
+  left: 0;
+}
+#page-content.slide-active {
+  padding-top: 0
+}
+/* put toggle bars on the left :: not using button */
+#slide-nav .navbar-toggle {
+  cursor: pointer;
+  position: relative;
+  line-height: 0;
+  float: left;
+  margin: 0;
+  width: 30px;
+  height: 40px;
+  padding: 10px 0 0 0;
+  border: 0;
+  background: transparent;
+}
+/* icon bar prettyup - optional */
+#slide-nav .navbar-toggle > .icon-bar {
+  width: 100%;
+  display: block;
+  height: 3px;
+  margin: 5px 0 0 0;
+  background: black
+}
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+  background: orange
+}
+.navbar-header {
+  position: relative
+}
+/* un fix the navbar when active so that all the menu items are accessible */
+.navbar.navbar-fixed-top.slide-active {
+  position: relative
+}
+/*  just stick it in max width since these classes are not shared between sizes */
+@media (max-width:767px) {
+  #slide-nav .container {
+    margin: 0;
+    padding: 0!important;
+  }
+  #slide-nav .navbar-header {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  #slide-nav .navbar.slide-active {
+    position: absolute;
+    width: 80%;
+    padding: 20 15px;
+    top: -1px;
+    z-index: 1000;
+  }
+  #slide-nav #slidemenu {
+    background: #f7f7f7;
+    left: -100%;
+    width: 80%;
+    min-width: 0;
+    position: absolute;
+    padding-left: 0;
+    z-index: 2;
+    top: -8px;
+    margin: 0;
+  }
+  #slide-nav #slidemenu .navbar-nav {
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+  }
+  #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+    min-width: 0;
+    width: 80%;
+    white-space: normal;
+  }
+  #slide-nav {
+    border-top: 0
+  }
+  #slide-nav.navbar-inverse #slidemenu {
+    background: #333
+  }
+  /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+  #slide-nav #navbar-height-col {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    left: -80%;
+    background: #eee;
+  }
+  #slide-nav.navbar-inverse #navbar-height-col {
+    background: #333;
+    z-index: 1;
+    border: 0;
+  }
+  #slide-nav .navbar-form {
+    width: 100%;
+    margin: 8px 0;
+    text-align: center;
+    overflow: hidden;
+    /*fast clearfixer*/
+  }
+  #slide-nav .navbar-form .form-control {
+    text-align: center
+  }
+  #slide-nav .navbar-form .btn {
+    width: 100%
+  }
+}
+@media (min-width:767px) {
+  #page-content {
+    left: 0!important
+  }
+  .navbar.navbar-fixed-top.slide-active {
+    position: relative;
+  }
+  .navbar-header {
+    left: 0!important
+  }
+
+}
+@media (max-width:1000px) {
+
+  .navbar-brand {
+    max-width:250px
+  }
+
+}
+@charset "utf-8";
+/* CSS Document */
+
+/* GLOBAL STYLES
+==================================================================*/
+
+sstazsub
+{
+
+  font-size: 18px;
+  font-family: "Century Gothic";
+  font-style: bold;
+
+}
+
+sstazhead
+{
+  padding: 50px 0;
+  font-size: 13px;
+  font-family: "Ubuntu Condensed";
+  font-style: normal;
+  font-weight: 400;
+}
+body {
+  overflow-x: hidden;
+  min-width: 200px;
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  padding-top: 20px;
+}
+.wrap {
+  height: 97%;
+  overflow: auto;
+}
+h1,h2,h3,h4,h5,h6 {
+}
+
+h4,h5,h6 {
+  color: #222;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+h5,h6 {
+  letter-spacing: 0.1em;
+  margin: 1em 0 3em;
+}
+
+a,
+a i,
+button {
+  transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+hr {
+  border-top: 3px solid #eee;
+  margin: 30px 0;
+}
+
+/* ROWS
+==================================================================*/
+
+section {
+  display: block;
+  padding: 30px 0;
+}
+
+.clear {
+  clear: both;
+  display: table;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.row {
+  opacity: 0;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.no-fade,
+footer {
+  opacity: 1;
+  background-color:#662408;
+  align: center;
+}
+
+.btn-lg {
+  border-width: 2px;
+  font-size: 100%;
+  letter-spacing: 0.1em;
+  padding: 15px 150px;
+}
+
+/* NAV
+==================================================================*/
+
+.navbar {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height:20px
+}
+
+.navbar-inverse {
+  background-color: orange;
+  border-color: #080808;
+}
+
+
+.nav > li > a {
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  border: 0;
+}
+
+/* BANNER
+==================================================================*/
+
+.tint {
+  background: rgba(0,0,0,0.2);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.welcome {
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 33%;
+  width: 100%;
+  -webkit-transform: translateY(-33%);
+  -moz-transform: translateY(-33%);
+  -ms-transform: translateY(-33%);
+  -o-transform: translateY(-33%);
+  transform: translateY(-33%);
+}
+
+.welcome h1 {
+  color: #fff;
+  margin: 0 30px;
+}
+
+.welcome p {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 1em 30px;
+  text-transform: uppercase;
+}
+
+.welcome i {
+  font-size: 60px;
+}
+
+/* BACKGROUNDS
+==================================================================*/
+
+.background1 {
+  background-color: #f47920;
+}
+
+.background2 {
+  background-color: #6c845e;
+}
+
+.background3 {
+  background-color: #96a270;
+}
+
+.background4 {
+  background-color: #f1a733;
+}
+
+.background5 {
+  background-color: #d9bfa8;
+}
+.background6 {
+  background-color: #e8340e;
+}
+.background7 {
+  background-color: #66ccff;
+}
+
+.background9 {
+  background-color: #99cc33;
+}
+.background10 {
+  background-color: #cb3f1c;
+}
+.background11 {
+  background-color: #d7cccf;
+}
+.background12 {
+  background-color: #ffc335;
+}
+.background13 {
+  background-color: #ffb6d3;
+}
+.background14 {
+  background-color: #e0ffe3;
+}
+
+.background15 {
+  background-color: #cbbdad;
+}
+
+.background,
+.background h2,
+.background h3 {
+  color: #fff;
+}
+
+
+.btn-transparent {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-transparent:hover {
+  border-color: #222;
+  color: #222;
+}
+
+/* ROOMS
+==================================================================*/
+
+#rooms1 {
+  bottom: 300px;
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+}
+
+#rooms1 .box {
+  color: #fff;
+  padding: 40px 10px 10px;
+  position: relative;
+}
+#rooms2 {
+  bottom: 550px;
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+}
+
+#rooms2 .box {
+  color: #fff;
+  padding: 40px 10px 10px;
+  position: relative;
+}
+#rooms {
+  top: 36vh;
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+}
+
+#rooms h3 {
+  color: #fff;
+}
+
+#rooms .box {
+  color: #fff;
+  padding: 40px 10px 10px;
+  position: relative;
+}
+
+#rooms .arrow {
+  bottom: -15px;
+  display: block;
+  height: 30px;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  width: 30px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#rooms1 .arrow {
+  bottom: -15px;
+  display: block;
+  height: 30px;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  width: 30px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#rooms .icon {
+  background: #fff;
+  color:#000000;
+  height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  padding: 15px;
+  position: absolute;
+  top: -40px;
+  width: 80px;
+}
+
+#rooms .icon img {
+  margin-top: 8px;
+
+}
+#rooms1 .icon {
+  background: #fff;
+  color:#000000;
+  height: 80px;
+  left: 50%;
+  margin-left: -40px;
+  padding: 15px;
+  position: absolute;
+  top: -40px;
+  width: 80px;
+}
+
+#rooms1 .icon img {
+  margin-top: 8px;
+
+}
+
+.aarathi-table > li > a  {
+  color: white;
+  font-weight: Bold;
+}
+
+/* TABS
+==================================================================*/
+
+.nav-tabs > li {
+  float: none;
+  display: inline-block;
+}
+
+.nav-tabs > li > a {
+  font-weight: normal;
+}
+
+.tab-content > .tab-pane {
+  padding: 30px 0;
+}
+
+/* TESTIMONIALS
+==================================================================*/
+
+#testimonials blockquote {
+  border: 0;
+  margin: 0 50px;
+  padding: 0;
+}
+
+#testimonials blockquote small {
+  color: #fff;
+  font-size: 100%;
+  margin-top: 15px;
+}
+
+/* GALLERY
+==================================================================*/
+
+.gallery {
+  display: table;
+  list-style: none;
+  padding: 20px 0;
+}
+
+.gallery li {
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+
+.gallery div {
+  background: rgba(0,0,0,0.3);
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.gallery i {
+  left: 50%;
+  margin: -21px 0 0 -17px;
+  position: absolute;
+  top: 50%;
+}
+
+.gallery a,
+.gallery a:hover {
+  color: #fff;
+}
+/* AARATHI TABLES
+==================================================================*/
+
+.aarathi-table {
+  list-style: none;
+  padding: 0;
+}
+
+.aarathi-table li {
+  border-bottom: 1px solid #ddd;
+  color: white;
+  padding: 3px 3px;
+}
+
+
+
+/* BLOG
+==================================================================*/
+/* PRICE TABLES
+==================================================================*/
+
+.price-table {
+  list-style: none;
+  padding: 0;
+}
+
+.price-table li {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #888;
+  padding: 15px 30px;
+}
+
+.price-table .title,
+.price-table .price {
+  background: #222;
+  border: 0;
+  color: #fff;
+  font-weight: 800;
+  padding-bottom: 0;
+}
+
+.price-table .price {
+  font-size: 2.769em;
+  padding-top: 0;
+}
+
+.price-table .period {
+  background: #222;
+  border: 0;
+  padding-top: 0;
+}
+
+#map-canvas {
+  height: 300px;
+}
+
+
+
+.price-table1 {
+  list-style: none;
+  padding: 0;
+}
+
+.price-table1 li {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #888;
+  padding: 1px 3px;
+}
+
+.price-table1 .title,
+.price-table1 .price {
+  background: #222;
+  border: 0;
+  color: #fff;
+  font-weight: 800;
+  padding-bottom: 0;
+}
+
+.price-table1 .price {
+  font-size: 2.769em;
+  padding-top: 0;
+}
+
+.price-table1 .period {
+  background: #222;
+  border: 0;
+  padding-top: 0;
+}
+
+#map-canvas1 {
+  height: 300px;
+}
+
+
+/* BLOG
+==================================================================*/
+
+header {
+  margin-top: 90px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 1em 0;
+}
+
+.post {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.entry-title {
+  color: #222;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.entry-meta {
+  color: #bbb;
+  padding-bottom: 30px;
+}
+
+.entry-meta span {
+  padding-right: 15px;
+}
+
+.entry-meta i {
+  padding-right: 5px;
+}
+
+.entry-content {
+  margin-top: 10px;
+}
+
+.carousel-control i {
+  margin-top: -15px;
+  position: absolute;
+  top: 50%;
+}
+
+img.pull-left {
+  margin: 5px 15px 15px 0;
+}
+
+img.pull-right {
+  margin: 5px 0 15px 15px;
+}
+
+.item .post {
+  border: 0;
+  padding: 0 30px;
+}
+
+/* SIDEBAR
+==================================================================*/
+
+aside h5 {
+  color: #e75d5d;
+  letter-spacing: normal;
+  margin: 0 0 1em;
+}
+
+aside h5 i {
+  margin-right: 10px;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside a {
+  border-top: 1px solid #eee;
+  color: #888;
+  display: block;
+  padding: 10px 25px;
+  position: relative;
+}
+
+aside a:hover {
+  background: #f8f8f8;
+  color: #222;
+}
+
+aside a i {
+  position: absolute;
+  right: 25px;
+  top: 13px;
+}
+
+aside a:hover i {
+  right: 15px;
+}
+
+/* COMMENTS
+==================================================================*/
+
+.comments h3 {
+  margin-bottom: 30px;
+}
+
+.comments h5 {
+  letter-spacing: normal;
+}
+
+.media, .media .media {
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+/* FOOTER
+==================================================================*/
+
+footer {
+  background: #5e1802;
+  text-align:center;
+  color:#fff;
+  height:20px;
+}
+
+footer p a {
+  color: #fff;
+}
+
+footer p a:hover {
+  color: #ccc;
+}
+
+footer ul {
+  list-style: none;
+  padding: 1em 0 0 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* MOBILE STYLES
+==================================================================*/
+
+@media (max-width: 767px) {
+
+  .welcome {
+    top: 50%;
+  }
+
+  .welcome h1 {
+    font-size: 36px;
+  }
+
+  .welcome p {
+    font-size: 18px;
+  }
+  #rooms1 {
+    bottom: auto;
+    position: relative;
+
+  }
+
+  #rooms1 .col-sm-3 {
+    padding: 0;
+  }
+
+  #rooms1 .box {
+    padding-top: 100px;
+  }
+
+
+  #rooms {
+    bottom: auto;
+    position: relative;
+
+  }
+  #myCarousel {
+
+    padding-top: 30px;
+
+
+  }
+
+  #rooms .col-sm-3 {
+    padding: 0;
+  }
+
+  #rooms .box {
+    padding-top: 100px;
+  }
+
+  #rooms .icon {
+    top: 30px;
+  }
+
+  #rooms .arrow {
+    display: none;
+  }
+  #rooms2 {
+    bottom: 510px;
+    align: right;
+  }
+  .item .post {
+    padding: 0;
+  }
+
+}
+/* SPOS BOX
+============================================== */
+.box {
+  min-width: 12.5rem;
+  margin-bottom: 0.9375rem;
+}
+.box h3 {
+  border: 0.125rem solid #000;
+  margin: 0 0 0.625rem 0;
+  padding: 0.625rem 0.625rem 25px;
+  color: #000;
+  font-family: Arial;
+  font-size: 1.25rem;
+  font-weight: bold;
+
+}
+.box.standard h3 {
+  background-color: #99cc33;
+}
+.box.bronze h3 {
+  background-color: #cb3f1c;
+}
+.box.silver h3 {
+  background-color: #d7cccf;
+}
+.box.gold h3 {
+  background-color: #ffc335;
+}
+.box.platinum h3 {
+  background-color: #ffb6d3;
+}
+.box.diamond h3 {
+  background-color: #e0ffe3;
+}
+.box .inner-box {
+  background-color: #e5c18a;
+  border: 0.125rem solid #000;
+  border-radius: 1.375rem;
+  padding: 0.625rem;
+  margin-top: -1.75rem;
+  min-height: 3.125rem;
+  position: relative;
+  color: #000;
+}
+.box .inner-box p {
+  margin: 0 0 0.625rem 0;
+  padding: 0;
+  font-size: .875rem;
+}
+.box .inner-box .wedge {
+  width: 0;
+  height: 0;
+  display: block;
+  border-left: 0.9375rem solid transparent;
+  border-right: 0.9375rem solid transparent;
+  border-bottom: 0.9375rem solid black;
+  top: -0.9375rem;
+  right: 2.8125rem;
+  position: absolute;
+}
+
+.box .inner-box .wedge:after {
+  content: ' ';
+  width: 0;
+  height: 0;
+  display: block;
+  border-left: 0.9375rem solid transparent;
+  border-right: 0.9375rem solid transparent;
+  border-bottom: 0.9375rem solid #e5c18a;
+  position: absolute;
+  top: 0.1875rem;
+  left: -0.9375rem;
+}
+
+/* END SPOS BOX
+============================================== */
+
+/* pagination
+===============================*/
+.pagination
+{
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+/* END pagination
+============================================== */

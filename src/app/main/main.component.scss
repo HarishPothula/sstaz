@@ -1,0 +1,26 @@
+
+
+.content-area {
+   padding: 0px !important;
+}
+.header {
+   background-color: #007cbb;
+}
+.btn {
+    color: #ffffff;
+    padding: 8px 12px 0 0;
+ }
+button:hover clr-icon, .btn:hover {
+    fill: #fff;
+}
+button:focus {
+    outline: none;
+}
+.btn:hover, .btn:active {
+    background-color: #007DB8;
+    color: #007DB8;
+    box-shadow: 0 0 0 0 #007DB8 inset;
+}
+.sidenav {
+    background: #fff;;
+}

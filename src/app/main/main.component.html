@@ -1,0 +1,63 @@
+<!-- ========== BANNER START ========== -->
+
+<div class="wrap" id="page-content">
+  <!-- rest of content for site -->
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Menu -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Items -->
+    <div class="carousel-inner">
+      <slideshow
+        [minHeight]="'525px'"
+        [autoPlay]="true"
+        [showArrows]="false"
+        [imageUrls]="imageSources"
+        [lazyLoad]="imageSources?.length > 1"
+        [autoPlayWaitForLazyLoad]="true">
+      </slideshow>
+    </div>
+    <!-- ========== ROOMS START ========== -->
+
+    <app-rooms id="rooms"></app-rooms>
+    <!-- ========== ROOMS END ========== -->
+
+    <!-- ========== DONATION START ========== -->
+
+    <app-donations id="donation"></app-donations>
+
+    <!-- ========== DONATION END ========== -->
+
+
+    <!--< ========== NEW TEMPLE START ========== -->
+    <app-new-temple id="events"></app-new-temple>
+    <!-- ========== NEW TEMPLE END ========== -->
+
+    <!-- ========== PRADOSHAM START ========== -->
+    <app-donors></app-donors>
+
+    <!-- ========== PRADOSHAM END ========== -->
+
+    <!-- ========== TEMPLE ABOUT START ========== -->
+
+    <app-about id="temple"></app-about>
+
+    <!-- ========== CONTACTUS START ========== -->
+
+    <app-contact id="contactus"></app-contact>
+    <!-- ========== CONTACTUS END ========== -->
+
+  </div>
+
+  <footer class="footer">
+    <div>
+      Shirdi Saibaba Temple Arizona © 2015. All rights reserved.
+    </div>
+  </footer>
+

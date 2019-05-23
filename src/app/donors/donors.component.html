@@ -1,0 +1,532 @@
+<section class="background background3 background-image" id="pradoosham">
+  <div class="container">
+    <div class="row text-center" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
+      <div class="col-sm-12">
+        <h2>Donors List</h2>
+        <p>Updated on {{currentDate}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-8 col-offset-2 text-center">
+  <ngx-datatable
+    class="material"
+    [sortType]="'multi'"
+    [columnMode]="'force'"
+    [rows]="donors_details"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    [scrollbarV]="true"
+    [limit]="10">
+    <ngx-datatable-column prop="name"></ngx-datatable-column>
+    <ngx-datatable-column prop="type"></ngx-datatable-column>
+  </ngx-datatable>
+  </div>
+  <div class="row text-center" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
+    <div class="row text-center" style="transition-property: all; transition-duration: 0s; transition-timing-function: ease; opacity: 1;">
+
+     <!-- <div class="container">
+        <table class="table" width="100%" border="1" style="border-color: white;overflow: auto;height: 100vh; max-height: 100vh;display: block">
+          <tbody>
+          <tr bgcolor="#CCCCCC">
+            <td width="10%" >&nbsp;</td>
+            <td width="38%" ><div align="left"><strong><span class="style14">NAME</span></strong></div></td>
+            <td width="26%"><div align="left"><strong><span class="style14">DONATION AMOUNT</span></strong></div></td>
+            <td width="26%" ><div align="left"><strong><span class="style14">DONATION LEVEL</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Sastry and Sridevi Durvasula</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$25,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Diamond</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Murali Meempat Nair and Meera Nair</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$10,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Platinum</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">ChandraShekar Tummala & Dr. Padma Tummala</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$10,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Platinum</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Jiten Sibal &amp; Family</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$10,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Platinum</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Manju &amp;  Mallik</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14"> $13,001</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Platinum</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Vinaykumar Kasimsetty &amp; Vinuta Kumar</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$5,101</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Gold</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Deepak Varshney &amp; Puja Saxena</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$5,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Gold</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Savithri Gunaratna</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14"> $5,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Gold</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Chenna Sanikommu</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14"> $2,761</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Silver</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Chamundeswari Seseela Althi</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14"> $2,020</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Silver</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Neelkanth Reddi</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$2,001</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Silver</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Swarnalatha Piedy &amp; Raj Boopathy (TechnicaX LLC)</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$2,001</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Silver</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Pushkar Dunakhe </span></strong></div></td>
+            <td><div align="left"><strong><span class="style14"> $2,001</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Silver</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Argyo Roy Debolina</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14"> $1,503</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Naidu Karri &amp; Sireesha Geddada</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14"> $1,116</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Dheeraj Gampala Rajagopal</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,116</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Sanjay S Bommakanti &amp; Sujatha Pasumarthy</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,116</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Satish Andalam</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,116</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Goutham Samalla </span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,116</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Ravikanth &amp; Latha Erramilli</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,116</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Kiran Gattamaneni</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,116</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Adinarayana and Bharati Malla</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14"> $1,051</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Ram Bhatni</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,051</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Chandrika Lotwala</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,008</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Krishna M Srinivasan &amp; Aparna Srinivasan</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,008</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Anandarao Mandadapu</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Krishnanjan Alaparthi</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Vijaya Murari &amp; Rupalatha Murari</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Padmaja Narla & Venkata Ramana Narla</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Venugopal Mathukumalli & Srilakshmi Mathukumalli</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Vijaya Murari &amp; Rupalatha Murari</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Sujitha Pavan chandupatla</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Sathyajit Rao & Nikhila Somenahalli</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Kamalakannan Ramakrishnan</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,002</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Rajaram Chandrasekaran & Gayathri Rajaram</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,001</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Sriram Barigeda & Sravani velidi</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Srinivas R Dargula & Nandini R Dargula</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">jayanthi Bhagavathula</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Balamurugan Ramakrishnan </span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Pavan Kumar Ponaka</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Muthuvinayagam Natarajan</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Siva Kumar</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Srinivas Ganti</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Taduri Ranga Rao & Shanta Rao</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$1,000</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Bronze</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Ravi Ivatury & Swati Malhotra</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$703</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Krishna Bhargav Sumanam</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$700</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14"><span class="style14">Standard</span></span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Chockalingam Muthuraman</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$601</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14"><span class="style14">Standard</span></span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Geetha Pendyala</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$600</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14"><span class="style14"><span class="style14">Standard</span></span></span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">RAJAGOPAL BHAVANI SANKAR</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$600</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14"><span class="style14"><span class="style14"><span class="style14">Standard</span></span></span></span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Someshwar R Giddigam</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$555</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14"><span class="style14"><span class="style14"><span class="style14"><span class="style14">Standard</span></span></span></span></span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Manoj Kamaraj</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Jaya Adusumilli & Satya Adusumilli</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Ankit Dave</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Kumar Subramaniam & Vidya Kumar</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Somasekhara Tulasi</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Venkata Phani Nandula</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Sudhakar Gajapathy</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Kiran Pedapudi</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Rajesndra Danda & Lakshmi Ramya Silpa Alapati</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Jayaram Abbaraju & Lavanya Abbaraju</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Satish Kunchala</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Veerareddy Bapathu</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Vani Pendyala</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Shiva Kumar Ramanan</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Priyatham Jampani</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Manoj Kamaraj</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$552</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Akanksha Purohit</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$551</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Ramachandra Budhiraju</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$516</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Mahesh Ganji</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$511</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Venkat Chilukuri</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$508</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Jai Jalaram Enterprices LLC</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$501</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Gopinath Kondapalli</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$501</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Lalitha N Velamakanni</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$501</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Sudha Chandrasekhar</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$501</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Sai Vasu</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$501</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Sai Prasad Devarakonda</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$501</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Ramamalini Sundarajan</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$500</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Ashish Ankam</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$500</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Balaji Nitharshan</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$500</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Samir Kawlekar</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$500</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <tr>
+            <td >&nbsp;</td>
+            <td ><div align="left"><strong><span class="style14">Rajiv Joshi</span></strong></div></td>
+            <td><div align="left"><strong><span class="style14">$400</span></strong></div></td>
+            <td ><div align="left"><strong><span class="style14">Standard</span></strong></div></td>
+          </tr>
+          <strong>      </strong>
+
+        </table>
+
+      </div>-->
+    </div>
+  </div>
+  <div align="right">
+    <a href="#myCarousel"><img src="assets/images/top.png" width="20" height="20"/></a>
+  </div>
+</section>

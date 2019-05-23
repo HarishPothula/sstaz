@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" style="margin-top: -20px; height: 80px;">
+  <a class="navbar-brand" href="#"><img src="assets/images/head-logo.png" alt="Shirdi Saibaba Temple Arizona" class="img-responsive" style="padding-top:0px;"></a>
+  <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse navbar-nav">
+    <a class="nav-item nav-link" href="#myCarousel">
+      Home
+    </a>
+    <a class="nav-item nav-link" href="#donation">
+     Donations
+    </a>
+    <a class="nav-item nav-link" href="#contactus">
+      CONTACT US
+    </a>
+    <a class="nav-item nav-link" href="#events">
+      NEW TEMPLE CONSTRUCTION
+    </a>
+    <a class="nav-item nav-link" href="#temple">
+      ABOUT TEMPLE
+    </a>
+    <a class="nav-item nav-link" routerLink="/login">
+      ADMIN
+    </a>
+  </div>
+</nav>

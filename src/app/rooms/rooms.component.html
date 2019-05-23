@@ -1,0 +1,143 @@
+ <div class="container text-center">
+    <div class="row" style="opacity: 1">
+      <div class="col-sm-3">
+        <div class="box background background4">
+          <ul class="aarathi-table">
+            <li><strong>$250,000 Fundraising Campaign Dec 10th to Dec 31st, 2018</strong></li>
+            <li><a href="#donation">Dollar for Dollar Match from few angel donors</a></li>
+            <li><a href="#donation" (click)="onDonate()">
+              <form action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx" method="post"
+                    name="PrePage" target="_blank">
+                <input type="hidden" name="LinkId" value="ad12ad03-a5c4-4d10-9e9f-08ef2e70a22d"/>
+                <input type="image" src="assets/images/donate-18.gif" width="123" height="39"/>
+              </form>
+            </a></li>
+          </ul>
+        </div>
+        <div class="icon img-circle">
+          <p><i class="fa fa-building" style="font-size:36px;"> </i><strong style="font-size: 0.7rem">Temple</strong>
+          </p>
+        </div>
+        <div class="arrow background background6"></div>
+      </div>
+      <div class="col-sm-3">
+        <div class="box background background1">
+          <ul class="aarathi-table">
+            <li>Weekdays: 6:30 am - 8:30 am | 6:00 pm - 8:30 pm</li>
+            <li>
+              Thursday: 6:30 am - 8:30 am | 11:30 am - 1:00 pm |6:00 pm - 9:30 pm
+            </li>
+            <li>Weekend: 8:00 am - 1:00 pm | 6:00 pm - 8:30 pm</li>
+
+          </ul>
+        </div>
+        <div class="icon img-circle">
+          <p><i class="fa fa-bell" style="font-size:36px;"></i><strong style="font-size: 0.7rem">Timings</strong></p>
+        </div>
+        <div class="arrow background background2"></div>
+      </div>
+
+
+      <div class="col-sm-3">
+        <div class="box background background2">
+
+
+          <ul class="aarathi-table">
+            <li><span>Kakada Aarthi: 6:30 am (Weekdays) | 8:00 am (Weekends)</span></li>
+            <li>Madhyana Aarthi: 12:00 noon (Thu-Sat-Sun)</li>
+            <li>Dhoop Aarthi: 6:30 pm (All Days)</li>
+            <li>Shej Aarthi: 8:00 pm (All Days)</li>
+          </ul>
+
+
+        </div>
+        <div class="icon img-circle">
+          <p><i class="fa fa-fire" style="font-size:36px;"> </i><strong style="font-size: 0.7rem">Aarathis</strong></p>
+        </div>
+        <div class="arrow background background1"></div>
+      </div>
+      <div class="col-sm-3">
+        <div class="box background background6">
+
+          <ul class="aarathi-table">
+            <li>07:00 p.m - Sri Hanuman Chalisa (Every Tuesday )</li>
+            <li>07:30 p.m - Sri Lalitha Sahasranamam (Every Friday)</li>
+            <li>07:30 p.m - Sri Vishnu Sahasranamam (Every Saturday)</li>
+
+          </ul>
+
+        </div>
+        <div class="icon img-circle">
+          <p><i class="fa fa-external-link" style="font-size:36px;"> </i><strong
+            style="font-size: 0.7rem">Events</strong></p>
+        </div>
+
+        <div class="arrow background background4"></div>
+      </div>
+
+
+    </div>
+  </div>
+<!--
+<div class="row" style="opacity: 1">
+  <div class="col-sm-3">
+    <div class="card">
+      <ul class="aarathi-table">
+        <li><strong>$250,000 Fundraising Campaign Dec 10th to Dec 31st, 2018</strong></li>
+        <li><a href="#donation">Dollar for Dollar Match from few angel donors</a></li>
+        <li><a href="#donation" (click)="onDonate()">
+          <form action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx" method="post"
+                name="PrePage" target="_blank">
+            <input type="hidden" name="LinkId" value="ad12ad03-a5c4-4d10-9e9f-08ef2e70a22d"/>
+            <input type="image" src="assets/images/donate-18.gif" width="123" height="39"/>
+          </form>
+        </a></li>
+      </ul>
+    </div>
+    <div class="icon img-circle">
+      <p><i class="fa fa-building" style="font-size:36px;"> </i><strong style="font-size: 0.7rem">Temple</strong>
+      </p>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <ul class="aarathi-table">
+        <li>Weekdays: 6:30 am - 8:30 am | 6:00 pm - 8:30 pm</li>
+        <li>
+          Thursday: 6:30 am - 8:30 am | 11:30 am - 1:00 pm |6:00 pm - 9:30 pm
+        </li>
+        <li>Weekend: 8:00 am - 1:00 pm | 6:00 pm - 8:30 pm</li>
+      </ul>
+    </div>
+    <div class="icon img-circle">
+      <p><i class="fa fa-bell" style="font-size:36px;"></i><strong style="font-size: 0.7rem">Timings</strong></p>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <ul class="aarathi-table">
+        <li><span>Kakada Aarthi: 6:30 am (Weekdays) | 8:00 am (Weekends)</span></li>
+        <li>Madhyana Aarthi: 12:00 noon (Thu-Sat-Sun)</li>
+        <li>Dhoop Aarthi: 6:30 pm (All Days)</li>
+        <li>Shej Aarthi: 8:00 pm (All Days)</li>
+      </ul>
+    </div>
+    <div class="icon img-circle">
+      <p><i class="fa fa-fire" style="font-size:36px;"> </i><strong style="font-size: 0.7rem">Aarathis</strong></p>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <ul class="aarathi-table">
+        <li>07:00 p.m - Sri Hanuman Chalisa (Every Tuesday )</li>
+        <li>07:30 p.m - Sri Lalitha Sahasranamam (Every Friday)</li>
+        <li>07:30 p.m - Sri Vishnu Sahasranamam (Every Saturday)</li>
+      </ul>
+    </div>
+    <div class="icon img-circle">
+      <p><i class="fa fa-external-link" style="font-size:36px;"> </i><strong
+        style="font-size: 0.7rem">Events</strong></p>
+    </div>
+  </div>
+</div>
+</div>
+-->
